@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="card card_css">
+        <div class="row">
+            <div class="col-md-6 head">
+                <h5> Trip type </h5 >
+                <h5 class="top"> Car Type </h5>
+                <h5 class="top">mileage</h5>
+                <h5 class="top"> Fuel Price </h5>
+                <h5 class="top"> Number of Person </h5>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>CITY</option>
+                      <option value="1">CITY</option>
+                      <option value="2">HIGHWAY</option>
+                      
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                  </div>
+               
+                  <div>
+                    <input type="text" width="1000px" [(ngModel)]="get">
+                  </div>
+                  <div class="top">
+                    <input type="number" [(ngModel)]="num"> 
+                  </div>
+                    <div class="top">
+                        <input type="number" [(ngModel)]="FuelPrice">
+                    </div>
+                    <div class="top">
+                        <input type="number" [(ngModel)]="Person" >
+                    </div>
+              
+            </div>
+        </div>
+    </div>
+    <app-distance [distance]="get" [value]="num" [Fuel]="FuelPrice" class="app"></app-distance>
+    <app-cost-division [per_head]="Person" class="division"></app-cost-division>
+    <div class="btn">
+      <button class="btn btn-primary" (click)="reset()"> RESET </button>
+            <button class="btn  btn-success" > SAVE </button>
+    </div>
+
+</div>

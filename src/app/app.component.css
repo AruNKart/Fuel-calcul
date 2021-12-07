@@ -1,0 +1,10 @@
+.header{
+    margin: 30px;
+    text-align: center;
+}
+.bg{
+    background: url(../assets/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

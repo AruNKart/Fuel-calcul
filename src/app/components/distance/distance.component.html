@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="card card_css">
+        <div class="row">
+            <div class="col-md-12 center">
+                <p>Fuel consumption of <b>{{distance}} </b> is <b>{{value}}</b> KMPL.
+                   I took this consumption value as per the google's Average mileage data.</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-5 txt_center">
+                <h6> Distance </h6>
+
+            </div>
+            <div class="col-md-5 ">
+                <input type="number" [(ngModel)]="valueNum" (change)="onDistanceChange()" (change)="onCost()">
+            </div>
+            <div class="col-md-2 ">
+                
+                <select id="inputState" class="form-select">
+                  <option selected> Km </option>
+                  <option>M</option>
+                </select>
+              </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-5 txt_center">
+                <h6> Fuel Used </h6>
+
+            </div>
+            <div class="col-md-5 ">
+                <input type="number" [(ngModel)]="fuelUsed" [disabled]="true">
+            </div>
+            <div class="col-md-2 ">
+                
+                <select id="inputState" class="form-select">
+                  <option selected> liter </option>
+                  <option>ml</option>
+                </select>
+              </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-5 txt_center">
+                <h6> Fuel Price </h6>
+
+            </div>
+            <div class="col-md-5 ">
+                <span> {{Fuel}}  </span> 
+            </div>
+            <div class="col-md-2 ">
+                
+                <select id="inputState" class="form-select">
+                  <option selected> ₹/Lit </option>
+                  <option>₹/ml</option>
+                </select>
+              </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-5 txt_center">
+                <h6> Cost of Trip </h6>
+
+            </div>
+            <div class="col-md-7 ">
+                <input type="number" [(ngModel)]="cost" [disabled]="true" >
+            </div>
+            
+        </div>
+    </div>
+</div>

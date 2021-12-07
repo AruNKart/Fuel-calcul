@@ -1,0 +1,21 @@
+.card_css{
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.head{
+    padding: 10px
+}
+.top{
+    padding-top: 25px;
+}
+.btn{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+}
+.card{
+    background: #000000d0;
+    color: #fff;
+
+}

@@ -1,0 +1,19 @@
+.card_css{
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 700px;
+    margin-left: 200px;
+}
+.center{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.txt_center{
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+.card{
+    background: #000000d0;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card card_css">
+        <div class="row">
+            <div class="col-md-6 text">
+               <h6>Number of Person </h6> 
+            </div>
+            <div class="col-md-6">
+                <span>{{per_head}}</span>
+            </div>
+        </div>
+        <div class="row bg " >
+            <div class="col-md-6 text">
+                <h6>Cost Per Person </h6> 
+            </div>
+            <div class="col-md-6 ">
+                <input type="text" disabled [(ngModel)]="finalValue">
+            </div>
+        </div>
+        <div class="btn">
+            
+            
+            <button class="btn  btn-success" (click)="onFinalCost()"> calculate </button>
+        </div>
+    </div>
+</div>
